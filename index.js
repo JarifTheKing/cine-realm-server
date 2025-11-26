@@ -177,7 +177,7 @@ async function run() {
       }
     });
 
-    // Update Movie — FINAL WORKING VERSION
+    // Update Movie
     app.put("/allMovies/:id", async (req, res) => {
       try {
         const { id } = req.params;
@@ -203,7 +203,7 @@ async function run() {
     // ---------------- MOVIES API END ----------------
 
     // MongoDB Ping
-    await client.db("admin").command({ ping: 1 });
+    // await client.db("admin").command({ ping: 1 });
     console.log(
       "Hey Jarif! Pinged your deployment. You successfully connected to MongoDB!"
     );
