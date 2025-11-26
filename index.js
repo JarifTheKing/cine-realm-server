@@ -23,7 +23,7 @@ const client = new MongoClient(uri, {
 // WRAP DB CONNECT INSIDE ASYNC FUNCTION
 async function run() {
   try {
-    await client.connect();
+    // await client.connect();
     console.log("MongoDB Connected Successfully!");
 
     const db = client.db("cine-realm");
